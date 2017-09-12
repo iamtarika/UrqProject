@@ -51,4 +51,18 @@
         <item name="android:backgroundTint">@color/edit_button</item>
     </style>
 
+
+
+
+
+    <style name="topic_title">
+        <item name="android:textSize">@dimen/text_size25</item>
+        <item name="android:textColor">@color/topic_color</item>
+    </style>
+    <style name="detail_alert">
+        <item name="android:textSize">@dimen/text_size15</item>
+        <item name="android:textColor">@color/detail_color</item>
+    </style>
+
+
 </resources>

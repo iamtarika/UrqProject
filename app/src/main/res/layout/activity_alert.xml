@@ -24,7 +24,9 @@
             android:layout_width="316dp"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:text="เสียงการแจ้งเตือน" />
+            android:textAppearance="@style/topic_title"
+            android:text="เสียงการแจ้งเตือน"
+            />
 
     </LinearLayout>
 
@@ -54,6 +56,7 @@
                 android:button="@null"
                 android:drawablePadding="60dp"
                 android:drawableRight="@android:drawable/btn_radio"
+                android:textAppearance="@style/detail_alert"
                 android:text="ไม่มีเสียง" />
 
             <RadioButton
@@ -63,6 +66,7 @@
                 android:button="@null"
                 android:drawablePadding="60dp"
                 android:drawableRight="@android:drawable/btn_radio"
+                android:textAppearance="@style/detail_alert"
                 android:text="ระบบสั่น" />
 
             <RadioButton
@@ -72,6 +76,7 @@
                 android:button="@null"
                 android:drawablePadding="60dp"
                 android:drawableRight="@android:drawable/btn_radio"
+                android:textAppearance="@style/detail_alert"
                 android:text="มีเสียง" />
 
         </RadioGroup>
