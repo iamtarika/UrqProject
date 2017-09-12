@@ -1,18 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.tarika.urqproject.MainActivity">
+    tools:context="com.example.tarika.urqproject.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="60dp">
+        <TextView
 
-</android.support.constraint.ConstraintLayout>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="กรุณาระบุคิวของคุณ"
+            android:textSize="35sp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_qr"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="สแกน QR Code"
+            android:textAppearance="@style/default_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="4sp"
+            android:layout_marginLeft="38sp"
+            android:layout_marginTop="4dp"
+            android:text="หรือ"
+            android:textAppearance="@style/default_text" />
+
+        <Button
+            android:id="@+id/fill_inform"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="กรอกข้อมูลด้วยตนเอง"
+            android:textAppearance="@style/default_text" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
