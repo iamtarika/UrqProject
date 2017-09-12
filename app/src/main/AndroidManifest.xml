@@ -16,8 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Alert" />
-        <activity android:name=".Notification" />
+        <activity android:name=".Alert"
+            android:label="@string/noti_sound" />
+        <activity android:name=".Notification"
+            android:label="@string/notification" />/>
         <activity android:name=".Main2Activity"></activity>
     </application>
 

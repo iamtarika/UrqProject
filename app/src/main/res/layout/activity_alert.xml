@@ -9,39 +9,35 @@
     tools:context="com.example.tarika.urqproject.Alert">
 
 
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Space
-            android:layout_width="70dp"
-            android:layout_height="65dp" />
-
         <TextView
             android:id="@+id/textAlert"
-            android:layout_width="316dp"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:textAppearance="@style/topic_title"
-            android:text="เสียงการแจ้งเตือน"
-            />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="รูปแบบเสียง"
+            android:textAppearance="@style/topic_title" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
 
-        <Space
-            android:layout_width="102dp"
-            android:layout_height="match_parent" />
+        >
 
         <RadioGroup
             android:id="@+id/radios"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_gravity="right"
@@ -51,13 +47,14 @@
 
             <RadioButton
                 android:id="@+id/radioButton1"
-                android:layout_width="278dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:button="@null"
+                android:checked="true"
                 android:drawablePadding="60dp"
                 android:drawableRight="@android:drawable/btn_radio"
-                android:textAppearance="@style/detail_alert"
-                android:text="ไม่มีเสียง" />
+                android:text="ไม่มีเสียง"
+                android:textAppearance="@style/detail_alert" />
 
             <RadioButton
                 android:id="@+id/radioButton2"
@@ -66,8 +63,8 @@
                 android:button="@null"
                 android:drawablePadding="60dp"
                 android:drawableRight="@android:drawable/btn_radio"
-                android:textAppearance="@style/detail_alert"
-                android:text="ระบบสั่น" />
+                android:text="ระบบสั่น"
+                android:textAppearance="@style/detail_alert" />
 
             <RadioButton
                 android:id="@+id/radioButton3"
@@ -76,8 +73,8 @@
                 android:button="@null"
                 android:drawablePadding="60dp"
                 android:drawableRight="@android:drawable/btn_radio"
-                android:textAppearance="@style/detail_alert"
-                android:text="มีเสียง" />
+                android:text="มีเสียง"
+                android:textAppearance="@style/detail_alert" />
 
         </RadioGroup>
 
